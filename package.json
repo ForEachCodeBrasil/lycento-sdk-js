@@ -1,0 +1,64 @@
+{
+  "name": "@lycento/sdk",
+  "version": "1.0.0",
+  "description": "Official Lycento SDK for software licensing",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "test": "echo \"No tests yet\"",
+    "lint": "eslint src/**/*.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "lycento",
+    "licensing",
+    "license",
+    "software",
+    "activation",
+    "validation",
+    "sdk",
+    "typescript"
+  ],
+  "author": "Lycento",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ForEachCodeBrasil/lycento-sdk-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ForEachCodeBrasil/lycento-sdk-js/issues"
+  },
+  "homepage": "https://github.com/ForEachCodeBrasil/lycento-sdk-js#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "axios": ">=0.21.0"
+  },
+  "peerDependenciesMeta": {
+    "axios": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "axios": "^1.6.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
